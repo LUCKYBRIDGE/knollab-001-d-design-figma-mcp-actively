@@ -1,0 +1,41 @@
+@media (max-width: 719px) {
+  body { min-width: 0; }
+  .app-shell {
+    width: calc(100% - 32px);
+    padding: 16px 0 32px;
+  }
+  .app-header {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .brand { font-size: 1.1rem; }
+  .progress-pill {
+    min-width: 0;
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+  .screen {
+    min-height: calc(100vh - 112px);
+    gap: 20px;
+  }
+  .screen-title { font-size: 1.7rem; }
+  .screen-copy { font-size: 1rem; }
+  .hero-symbol { width: 112px; height: 100px; font-size: 2.7rem; }
+  .choice-grid,
+  .choice-grid--three { grid-template-columns: minmax(0, 1fr); }
+  .choice-card,
+  .choice-card--simple { min-height: 120px; padding: 16px; }
+  .choice-card__name,
+  .choice-card--simple .choice-card__name { font-size: 1.25rem; }
+  .current-selection { flex-wrap: wrap; gap: 4px 12px; }
+  .current-selection__value { text-align: left; overflow-wrap: anywhere; }
+  .button,
+  .button--primary { min-width: 0; }
+  .review-row,
+  .review-total { flex-wrap: wrap; padding: 14px 16px; }
+  .review-row__main { flex: 1 1 100%; min-width: 0; justify-content: space-between; gap: 10px; }
+  .review-row__value { font-size: 1rem; text-align: right; overflow-wrap: anywhere; }
+  .review-total__price { font-size: 1.4rem; }
+  .order-phrase { padding: 16px; overflow-wrap: anywhere; }
+  .order-phrase__text { font-size: 1.1rem; }
+}

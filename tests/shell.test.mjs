@@ -9,6 +9,8 @@ const script = readFileSync(resolve(root, 'shell.js'), 'utf8');
 
 test('D exposes only preserved version 1', () => {
   assert.ok(existsSync(resolve(root, 'versions/v1/index.html')));
+  assert.ok(existsSync(resolve(root, 'experience/v1/index.html')));
+  assert.ok(existsSync(resolve(root, 'experience/v1/responsive.css')));
   assert.equal(existsSync(resolve(root, 'versions/v2/index.html')), false);
   assert.equal(existsSync(resolve(root, 'versions/v3/index.html')), false);
 });

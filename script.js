@@ -300,14 +300,12 @@ app.addEventListener('click', event => {
       break;
     case 'next-drink':
       if (requireSelection('drink', '먼저 음료를 하나 선택하세요.')) {
-        if (!state.temperature) state.temperature = 'iced';
         goToStep(2);
         announce('온도 선택 단계입니다.');
       }
       break;
     case 'next-temperature':
       if (requireSelection('temperature', '먼저 온도를 하나 선택하세요.')) {
-        if (!state.size) state.size = 'medium';
         goToStep(3);
         announce('크기 선택 단계입니다.');
       }

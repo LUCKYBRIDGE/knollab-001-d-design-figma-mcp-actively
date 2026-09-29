@@ -19,7 +19,6 @@
 }
 
 * { box-sizing: border-box; }
-
 html { background: var(--bg); }
 
 body {
@@ -32,8 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-button { font: inherit; }
-button { cursor: pointer; }
+button { font: inherit; cursor: pointer; }
 
 .app-shell {
   width: min(1180px, calc(100vw - 64px));
@@ -73,10 +71,7 @@ button { cursor: pointer; }
   font-weight: 800;
 }
 
-.app-main {
-  min-height: calc(100vh - 144px);
-  outline: none;
-}
+.app-main { min-height: calc(100vh - 144px); outline: none; }
 
 .screen {
   display: flex;
@@ -141,9 +136,7 @@ button { cursor: pointer; }
   background: var(--soft);
 }
 
-.current-selection--editing {
-  background: #f0ede7;
-}
+.current-selection--editing { background: #f0ede7; }
 
 .current-selection__label {
   flex: 0 0 auto;
@@ -158,19 +151,12 @@ button { cursor: pointer; }
   font-weight: 800;
 }
 
-.choice-grid {
-  display: grid;
-  gap: 16px;
-}
+.choice-grid { display: grid; gap: 16px; }
 
 .choice-grid--drinks,
-.choice-grid--two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
+.choice-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-.choice-grid--drinks .choice-card {
-  min-height: 180px;
-}
+.choice-grid--drinks .choice-card { min-height: 180px; }
 
 .choice-grid--three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -247,7 +233,6 @@ button { cursor: pointer; }
   display: flex;
   justify-content: flex-end;
   gap: 12px;
-  margin-top: auto;
   padding-top: 8px;
 }
 
@@ -420,17 +405,11 @@ button { cursor: pointer; }
     gap: 12px;
   }
 
-  .choice-grid--two .choice-card {
-    min-height: 150px;
-  }
+  .choice-grid--two .choice-card { min-height: 150px; }
 
-  .choice-grid--drinks {
-    gap: 12px;
-  }
+  .choice-grid--drinks { gap: 12px; }
 
-  .choice-grid--drinks .choice-card {
-    min-height: 204px;
-  }
+  .choice-grid--drinks .choice-card { min-height: 204px; }
 
   .choice-grid--three { gap: 10px; }
 
@@ -439,23 +418,16 @@ button { cursor: pointer; }
     padding: 16px;
   }
 
-  .choice-grid--three .choice-card__name {
-    font-size: 1.25rem;
-  }
+  .choice-grid--three .choice-card__name { font-size: 1.25rem; }
 
-  .action-row {
-    width: 100%;
-  }
+  .action-row { width: 100%; }
 
   .action-row .button {
     flex: 1 1 0;
     min-width: 0;
   }
 
-  .review-row {
-    min-height: 68px;
-  }
-
+  .review-row { min-height: 68px; }
   .review-row__label { min-width: 62px; }
 }
 
